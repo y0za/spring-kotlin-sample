@@ -37,6 +37,7 @@ dependencies {
 	compile('org.seasar.doma.boot:doma-spring-boot-starter:1.1.1')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}")
 	compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
+	compile('org.flywaydb:flyway-core:3.0')
 	runtime('com.h2database:h2:1.4.196')
 	testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
 }
