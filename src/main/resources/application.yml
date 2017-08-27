@@ -9,3 +9,4 @@ spring:
       enabled: true
 doma:
   dialect: h2
+  naming: SNAKE_LOWER_CASE
