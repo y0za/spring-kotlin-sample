@@ -1,5 +1,6 @@
 CREATE TABLE users (
     id BIGINT IDENTITY NOT NULL PRIMARY KEY,
+    password VARCHAR(255) NOT NULL,
     screen_name VARCHAR(20) NOT NULL,
     display_name VARCHAR(20) NOT NULL,
     created_at TIMESTAMP NOT NULL
