@@ -10,3 +10,9 @@ spring:
 doma:
   dialect: h2
   naming: SNAKE_LOWER_CASE
+---
+spring:
+  profiles: unit
+  datasource:
+    url: jdbc:h2:mem:unit;DATABASE_TO_UPPER=false
+flyway.schemas: PUBLIC
