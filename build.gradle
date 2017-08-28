@@ -28,7 +28,7 @@ compileTestKotlin {
 	kotlinOptions.jvmTarget = "1.8"
 }
 
-compileJava.dependsOn processResources
+compileKotlin.dependsOn processResources
 
 kapt {
 	arguments {
