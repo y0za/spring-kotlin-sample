@@ -1,5 +1,6 @@
 package com.sample.entity
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import org.seasar.doma.*
 import java.sql.Timestamp
 
@@ -9,6 +10,7 @@ data class User(
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long? = null,
+        @JsonIgnore
         val password: String,
         val screenName: String,
         val displayName: String,
